@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace 
+}
+
+:root {
+    --main-color: #fff;
+    --text-color: #000;
+    --bg-color: #1e1c2a;
+    accent-color: #0099ff;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--main-color);
+    padding: 0 4rem;
+    height: auto;
+    margin-top: 10rem;
+    border-radius: 1rem;
+    line-height: 1.4;
+    transition: all .2s ease;
+}
+
+.result:hover {
+    box-shadow: #0099ff 0 0 0 3px;
+}
+
+.content {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: block;
+    text-align: center;
+}
+
+.bar {
+    height: 2rem;
+    width: 17rem;
+    border-radius: 8px;
+    border: 2px solid;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    border-radius: 8px;
+    line-height: 1.4;
+    color: rgb(0, 0, 0);
+    border-color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all .2s ease;
+    box-sizing: border-box;
+
+}
+
+.bar:hover {
+    box-shadow: #0099ff 0 0 0 2px;
+    border: 0px;
+    transition: .4s;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.slider {
+    width: 15rem;
+}
+
+.copy {
+    width: 2rem;
+    align-items: center;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 2rem;
+    line-height: 24px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.regenerate {
+    width: 2rem;
+    align-items: center;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 2rem;
+    line-height: 24px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.number-range {
+    width: 2.7rem;
+    align-items: center;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    height: 1.8rem;
+    line-height: 24px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.checkbox-container {
+    padding-top: 10px;
+}
+
+.checbox-div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+@media (max-width: 450px) {
+    .result {
+        padding: 2rem;
+        width: 80%;
+    }
+}

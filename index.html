@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+
+    <section class="main">
+
+        <section class="result">
+            <div class="content">
+                <h1>Generate your own secure passwords!</h1>
+            </div>
+
+            <form class="result-bar">
+                <input class="bar" type="text" id="bar">
+                <button class="copy" id="copy"><i class='bx bx-copy-alt'></i></button>
+                <button class="regenerate" id="regenerate"><i class='bx bx-revision'></i></button>
+            </form>
+
+            <section class="slider-container">
+                <input type="number" value="12" class="number-range" id="number-range">
+                <input type="range" min="0" max="50" value="12" class="slider" id="myRange">
+            </section>
+            <p>Length: <span id="sliderValue">10</span></p>
+
+            <section class="checkbox-container">
+                <div class="checkbox-div">
+                    <input checked type="checkbox" class="uppercase" id="uppercase"><label for="uppercase">Uppercase</label>
+                </div>
+
+                <div class="checkbox-div">
+                    <input checked type="checkbox" class="lowercase" id="lowercase"><label for="lowercase">Lowercase</label>
+                </div>
+
+                <div class="checkbox-div">
+                    <input checked type="checkbox" class="numbers" id="numbers"><label for="numbers">Numbers</label>
+                </div>
+
+                <div class="checkbox-div">
+                    <input checked type="checkbox" class="symbols" id="symbols"><label for="symbols">Symbols</label>
+                </div>
+
+                </section>
+        </section>
+
+    </section>
+
+    <script src="js/slider.js"></script>
+</body>
+
+</html>
